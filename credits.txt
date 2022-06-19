@@ -1,0 +1,11 @@
+icon: <a href="https://www.flaticon.com/free-icons/it-support" title="it-support icons">It-support icons created by Freepik - Flaticon</a>
+icon_bck: https://unsplash.com/photos/7JX0-bfiuxQ
+project: https://unsplash.com/photos/DUmFLtMeAbQ
+
+flaticon:
+
+phone icon: <i class="fi fi-rr-phone-call"></i>
+email: <i class="fi fi-rr-at"></i>
+address: <i class="fi fi-rs-marker"></i>
+phone: <i class="fi fi-rr-phone-call"></i>
+linkedin: <div> undefined <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
