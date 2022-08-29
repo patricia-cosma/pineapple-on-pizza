@@ -82,7 +82,7 @@ p {
 }
 #header .header {
     min-height: 8vh; /*made the elements to go to the top*/
-    background-color: #41b3a3;
+    /* background-color: #41b3a3; - removed for improvement*/
     transition: .4s ease background-color;
 }
 #header .nav-bar {
