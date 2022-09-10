@@ -16,8 +16,11 @@ I created an icon on Favicon and this was my final choice:
 The hero section is pretty simple and easy to navigate. Hovering over the navigation bar items or the button, you'll get a different colour. Additionally, clicking on any of the before-mentioned items will redirect you to that specific location on the page.
 ![hero section](https://user-images.githubusercontent.com/107708977/179020126-03c120c5-2574-4133-9cbc-59a11fbadde7.png)
 
+--- this section is replaced by Blog section ---
 The Services section would serve as a place in the page to display one's strenghts. In this version, you can see all the items next to each other. However, as it is responsive, they will also come in 2x2 format or one below the other.
 ![image](https://user-images.githubusercontent.com/107708977/179020362-05478495-9363-4dbc-8fd4-09acbf190181.png)
+--- end changes ---
+
 
 Next in line is the Projects section. This would eventually be the place to add briefly some ideas about my last projects. Hovering over the projects will have a small transition effect on the page, emphasizing so the project at hand.
 ![image](https://user-images.githubusercontent.com/107708977/179021412-d583eb95-350b-45eb-93aa-88dfb895aaf8.png)
