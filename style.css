@@ -273,18 +273,18 @@ p {
     margin: 0 auto;
     padding: 100px 0;
 }
-#blog .service-top {
+#blog .blog-top {
     max-width: 80%;
     margin: 0 auto;
 }
-#blog .service-bottom {
+#blog .blog-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
 }
-#blog .service-item {
+#blog .blog-item {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -299,7 +299,7 @@ p {
     z-index: 1;
     overflow: hidden; /**/
 }
-#blog .service-item::after {
+#blog .blog-item::after {
     content: '';
     position: absolute;
     left: 0;
@@ -311,18 +311,18 @@ p {
     opacity: 0.8;
     z-index: -1;
 }
-#blog .service-bottom .icon {
+#blog .blog-bottom .icon {
     height: 80px;
     width:  80px;
     margin-bottom: 20px;
 }
-#blog .service-item h2 {
+#blog .blog-item h2 {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-#blog .service-item p {
+#blog .blog-item p {
     color: white;
     text-align: left;    
 }
@@ -585,7 +585,7 @@ p {
     /* End Hero Section */
 
     /* Blog Section */
-    #blog .service-bottom .service-item {
+    #blog .blog-bottom .blog-item {
         flex-basis: 35%;
         margin: 1.5%;
     }
@@ -695,11 +695,11 @@ p {
     }
     /*end header*/
 
-    #blog .service-bottom .service-item {
+    #blog .blog-bottom .blog-item {
         flex-basis: 22%;
         margin: 1.5%;
     }
-    #blog .service-top {
+    #blog .blog-top {
         width: 50%;
     }
 }
