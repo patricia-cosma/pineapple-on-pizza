@@ -291,6 +291,7 @@ p {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
+    height: 400px;
     border-radius: 10px;
     background-image: url(/img/icon-bck.png);
     background-size: cover;
