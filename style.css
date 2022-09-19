@@ -464,7 +464,7 @@ p {
     margin: 0 auto;
 }
 #contact .contact-details {
-    width: 450px; /*box and shadow around the contact details */
+    width: 400px; /*box and shadow around the contact details */
 }
 #contact .contact-item {
     width: 80%;
