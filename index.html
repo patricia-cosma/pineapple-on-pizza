@@ -1,7 +1,7 @@
 <!-- First I was afraid, I was petrified... https://www.youtube.com/watch?v=Vmb1tqYqyII -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- Shortcut comment CTRL K C -->
+<!-- to turn a line into comment: CTRL + K + C -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Patricia Cosma</title>
     <link rel="icon" type="image/x-icon" href="./img/android-chrome-512x512.png">
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- links for the rest of the icons: <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest"> -->
-    <!--add scroll to top button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <!--feature to be added later: button - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
 </head>
 <body>
     <!-- Header -->
-    <section id="header"> <!--this id helps with the a element later when clicking the other sections from the header-->
+    <section id="header">
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
@@ -28,7 +28,8 @@
                         <div class="bar"></div>
                     </div>
                     <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li> <!--data after is used as attribute in css under content to display the text behind-->
+                        <!--NOTE: data-after is used as attribute in CSS under content to display the text behind-->
+                        <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#blog" data-after="Blog">Blog</a></li>
                         <li><a href="#projects" data-after="Projects">Projects</a></li>
                         <li><a href="#about" data-after="About">About</a></li>
@@ -45,7 +46,8 @@
     <section id="hero">
         <div class="hero container">
             <div>
-                <h1>Hellooooo!<span></span></h1> <!--The <span> tag is an inline container used to mark up / color a part of a text, or a part of a document.-->
+                <!--NOTE: The <span> tag is an inline container and it can be used to group elements for styling purposes.-->
+                <h1>Hellooooo!<span></span></h1>
                 <h1>I am Patricia.<span></span></h1>
                 <a href="#projects" type="button" class="cta">Portofolio</a>
             </div>
@@ -59,7 +61,7 @@
         <div class="blog container">
             <div class="blog-top">
                 <h1 class="section-title">Bl<span>o</span>g pos<span>t</span>s</h1>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> -->
+                <!-- <p>You can add here a short description for this section, if needed.</p> -->
             </div>
             <div class="blog-bottom">
                 <div class="blog-item">
@@ -83,12 +85,12 @@
                     <p>The nicest thing about CSS is that one problem can be solved in many ways.
                         It doesn’t matter that you don’t know all the possibilities - you won’t struggle to find your way out of the problem.</p>
                 </div>
-                <!--<div class="blog-item">
+                <!--To add another block on this section just use the following:
+                    <div class="blog-item">
                     <div class="icon"><img src="/img/icon.png"></div>
-                    <h2>Your commitment with commitments on GitHub</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                </div>-->
+                    <h2>Your new blog post title</h2>
+                    <p>Description</p>
+                    </div>-->
             </div>
         </div>
     </section>

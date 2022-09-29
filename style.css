@@ -2,7 +2,9 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width */
+    /* NOTE: this tells the browser to account for any border and padding in the values you specify for an element's width and height.
+    If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width */
+    box-sizing: border-box;
 }
 html {
     font-size: 10px;
@@ -17,9 +19,11 @@ a:hover {
     color: #f69865ff;
 }
 
-.container{ /*what for exactly?*/
-    min-height: 100vh; /* VH = viewport height; 100vh would represent 100% of the viewport height or the full height of the screen */
-    display: flex; /*Flexbox is a one-dimensional layout system that we can use to create a row or a column axis layout - https://blog.logrocket.com/flexbox-vs-css-grid/*/
+.container{
+    /* NOTE: VH = viewport height; 100vh would represent 100% of the viewport height or the full height of the screen */
+    min-height: 100vh;
+    /* NOTE: Flexbox is a one-dimensional layout system that we can use to create a row or a column axis layout. More on: https://blog.logrocket.com/flexbox-vs-css-grid/  */
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -32,10 +36,9 @@ p {
     color: black;
     font-size: 1.4rem;
     margin-top: 5px;
-    line-height: 2.5rem; /*distance between lines*/
+    line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
-    /*text to be more margined - as the services?*/
 }
 
 .section-title {
@@ -62,7 +65,8 @@ p {
     letter-spacing: .1rem;
     margin-top: 30px;
     transition: .3s ease;
-    transition-property: background-color, color; /*this way the transition of 3s will be applied to both color and background-color*/
+    /*NOTE: this will apply the above transition to both color and background-color */
+    transition-property: background-color, color;
 }
 .cta:hover {
     color:#ffffff;
@@ -82,12 +86,13 @@ p {
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100vw; /*Relative to 1% of the width of the viewport; Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.*/
+    /* NOTE: Relative to 1% of the width of the viewport; Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.*/
+    width: 100vw;
     height: auto;
 }
 #header .header {
-    min-height: 8vh; /*made the elements to go to the top*/
-    /* background-color: #41b3a3; - removed for improvement*/
+    min-height: 8vh;
+    /* background-color: #41b3a3; - removed for improvement, feel free to try and use it*/
     transition: .4s ease background-color;
 }
 #header .nav-bar {
@@ -96,8 +101,9 @@ p {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    max-width: 1300px; /*distance between brand and nav-list*/
-    padding: 0 10px; /*left and right*/
+    max-width: 1300px;
+    /* NOTE: If the padding property has two values the first reprents top & bottom (eg. 0) and the second, right & left (eg. 10px) */
+    padding: 0 10px;
 }
 #header .nav-list ul {
     list-style: none;
@@ -116,7 +122,9 @@ p {
     transition: .5s ease left;
 }
 #header .nav-list ul.active {
-    left: 0; /*if you'd like the menu to open only on 80% of the page, add 20% to left. but make sure the styling for the menu corresponds and it will be alligned*/
+    /* If you'd like the menu to open only on 80% of the page for example, add 20% to left.
+    After that, make sure the styling for the menu corresponds and it will be alligned*/
+    left: 0; 
 }
 
 #header .nav-list ul a {
@@ -129,12 +137,13 @@ p {
     padding: 30px;
     display: block;
 }
-#header .nav-list ul a::after { /*The ::after selector inserts something after the content of each selected element(s) - compare with :hover below.*/
+/* NOTE: The ::after selector inserts something after the content of each selected element(s) */
+#header .nav-list ul a::after {
     content: attr(data-after);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0); /*this will make it centered?; scale 0 removes the Text from content*/
+    transform: translate(-50%, -50%) scale(0);
     color: rgba(13, 115, 124, 0.7);
     font-size: 15rem;
     letter-spacing: 50px;
@@ -153,7 +162,7 @@ p {
     width: 40px;
     display: inline-block;
     border: 3px solid white;
-    border-radius: 50%; /*make it circle*/
+    border-radius: 50%;
     position: relative;
     display: flex;
     align-items: center;
@@ -163,7 +172,7 @@ p {
     transform: scale(.8);
     margin-right: 20px;
 }
-#header .hamburger::after { /*affect on the button: first we create the actual line and then a keyframe*/
+#header .hamburger::after { /*Effect on the button: first we create the actual line and then a keyframe*/
     position: absolute;
     content: '';
     height: 100%;
@@ -209,8 +218,8 @@ p {
     background-image: url(./img/dog.png);
     background-size: cover;
     background-position: top center;
-    position: relative; /*position of the class, not image*/
-    z-index: 1; /*layout: -1 opacity comes under, 0 is the text and 1 are these*/
+    position: relative;
+    z-index: 1; /*layout: -1 opacity comes under, 0 is the text and 1 is this*/
 }
 #hero::after /*the overlay*/ {
     content: '';
@@ -218,7 +227,7 @@ p {
     height: 100%;
     width: 100%;
     left: 0;
-    top: 0; /*without these last ones, the ::after doesn't work*/
+    top: 0;
     background-color: #41b3a3;
     opacity: .7;
     z-index: -1;
@@ -232,22 +241,22 @@ p {
 #hero h1 {
     display: block;
     width: fit-content;
-    font-size: 4rem; /*font size x 2 = px number?
-    Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium
+    font-size: 4rem;
+    /* NOTE: Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium
     Relative to font-size of the root element*/
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s;
 }
-#hero h1:nth-child(1) { /*this addresses only a child element from h1 - the first then second, then third*/
+#hero h1:nth-child(1) { /*this addresses only a child element from h1 - in this case the first*/
     animation-delay: 1s;
 }
 #hero h1:nth-child(2) {
     animation-delay: 2s;
 }
 #hero h1 span {
-    position: absolute; /*as the position of h1 is relative (above), we can safely use absolute here*/
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -265,7 +274,6 @@ p {
 /* End Hero Section */
 
 /*Blog Section*/
-
 #blog .blog {
     flex-direction: column;
     text-align: center;
@@ -298,7 +306,7 @@ p {
     margin: 10px 5%;
     position: relative;
     z-index: 1;
-    overflow: hidden; /**/
+    overflow: hidden;
 }
 #blog .blog-item::after {
     content: '';
@@ -308,7 +316,7 @@ p {
     height: 100%;
     width: 100%;
     background-color: #41b3a3;
-    /*background-image: linear-gradient(100deg, #07454B 0%, #ebda99ff 100%); */
+    /*currently removed - background-image: linear-gradient(100deg, #07454B 0%, #ebda99ff 100%); */
     opacity: 0.8;
     z-index: -1;
 }
@@ -333,8 +341,8 @@ p {
 #projects .projects {
     flex-direction: column;
     max-width: 1200px;
-    margin: 0 auto; /*make sure it's in the middle?*/
-    padding: 100px 0; /*distance between previous section and title*/
+    margin: 0 auto;
+    padding: 100px 0;
 }
 #projects .projects-header h1{
     margin-bottom: 50px;
@@ -351,20 +359,22 @@ p {
     justify-content: center;
     flex-direction: column;
     width: 80%;
-    margin: 20px auto; /*so that we cam have gaps*/
-    overflow: hidden; /*Content is clipped if necessary to fit the padding box. No scrollbars are provided, and no support for allowing the user to scroll (such as by dragging or using a scroll wheel) is allowed*/
+    margin: 20px auto;
+    /* NOTE: Content is clipped if necessary to fit the padding box.
+    No scrollbars are provided, and no support for allowing the user to scroll (such as by dragging or using a scroll wheel) is allowed*/
+    overflow: hidden;
     border-radius: 10px;
 }
 #projects .project-info {
     padding: 30px;
-    flex-basis: 50%; /**/
+    flex-basis: 50%;
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     background-color: #41b3a3;
-    /* background-image: linear-gradient(75deg, #07454B 0%, white 100%); */
+    /* currently removed - background-image: linear-gradient(75deg, #07454B 0%, white 100%); */
     opacity: 0.9;
     color: white;
 }
@@ -394,7 +404,7 @@ p {
     height: 100%;
     width: 100%;
     background-color: #ebda99ff;
-    /* background-image: linear-gradient(75deg, #f69865ff 0%, #ebda99ff 100%); */
+    /* currently removed - background-image: linear-gradient(75deg, #f69865ff 0%, #ebda99ff 100%); */
     opacity: 0.8;
 }
 #projects .project-img img {
@@ -418,7 +428,7 @@ p {
 }
 #about .col-right h2 {
     font-size: 1.5rem;
-    /* font-weight: 500; */
+    /* if needed, you can also add: font-weight: 500; */
     letter-spacing: .2rem;
     margin-bottom: 10px;
     color: #41b3a3;
@@ -464,7 +474,8 @@ p {
     margin: 0 auto;
 }
 #contact .contact-details {
-    width: 400px; /*box and shadow around the contact details */
+    /*box and shadow around the contact details */
+    width: 400px; 
 }
 #contact .contact-item {
     width: 80%;
@@ -478,8 +489,9 @@ p {
     align-items: center;
     /* flex container basic*/
     flex-direction: column;
-    box-shadow: 0px 0px 12px 0px #41b3a3; /*each point*/
-    transition: .3s ease box-shadow; /*smoother transition over when hover*/
+    box-shadow: 0px 0px 12px 0px #41b3a3;
+    /* it provides a smoother transition when hovering*/
+    transition: .3s ease box-shadow; 
 }
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0px #41b3a3;
@@ -530,7 +542,8 @@ p {
     margin: 0 5px;
 }
 #footer .social-item img {
-    filter: grayscale(1); /**use 0 in the brackets to make the icons instantly colorful, without hover - see below*/
+    /*you can use 0 in the brackets to make the icons instantly colorful, without hover - see an example below*/
+    filter: grayscale(1); 
     transition: .3s ease filter;
 }
 #footer .social-item:hover img {
@@ -553,7 +566,8 @@ p {
         transform: scale(1.5); /*if you want it to go bigger, increase number*/
     }
 }
-@keyframes text_reveal_box { /*this specifies the animation code. The animation is created by gradually changing from one set of CSS styles to another*/
+@keyframes text_reveal_box { /*this specifies the animation.
+    The animation is created by gradually changing from one set of CSS styles to another*/
     50% {
         width: 100%;
         left: 0;
@@ -593,14 +607,14 @@ p {
     /* End Blog Section */
 
     /* Projects Section */
-    #projects .project-item { /*why not #projects .all-projects .project-item - taking into account project-info below*/
+    #projects .project-item {
         height: 400px;
         margin: 5px auto;
         width: 100%;
         border-radius: 0;
         flex-direction: row;
     }
-    #projects .project-item:nth-child(even) { /*will apply only on even elements - can be changed to odd*/
+    #projects .project-item:nth-child(even) { /*will apply only on even elements - can be changed to odd as well if needed*/
         flex-direction: row-reverse;
     }
     #projects .all-projects .project-info {
@@ -622,7 +636,7 @@ p {
     }
     #about .col-left .about-img::after {
         top: 55px;
-        /* left, height, width */
+        /* currently removed - left, height, width */
     }
     #about .col-right {
         text-align: left;
@@ -635,7 +649,7 @@ p {
 
     /* Contact */
     #contact .contact {
-        /* flex-direction: row; -already specified earlier*/
+        /* currently removed - flex-direction: row; */
         padding: 100px 0;
         align-items: center;
         justify-content: center;
@@ -643,16 +657,16 @@ p {
     }
     #contact .contact-details {
         width: 100%;
-        /* padding: 30px; */
+        /* currently removed - padding: 30px; */
         display: flex;
         flex-direction: row;
-        /* justify-content: space-evenly; - without margin 15px, can I add this?*/
+        /* currently removed - justify-content: space-evenly; */
         margin: 0;
         /* optional: padding: 30px; */
     }
     #contact .contact-item {
         width: 30%;
-        margin: 15px; /*margin 0 if using space-evenly*/
+        margin: 15px; /*margin 0 if using space-evenly above*/
         flex-direction: row;
     }
     #contact .contact-item .icon {
@@ -661,7 +675,7 @@ p {
     }
     #contact .contact-item .icon img {
         object-fit: contain;
-        /* align-items: center; - icons to be more aligned*/ 
+        /* currently removed - align-items: center; - icons to be more aligned*/ 
     }
     #contact .contact-item .contact-info {
         width: 100%;
