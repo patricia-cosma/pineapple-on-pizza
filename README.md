@@ -12,13 +12,13 @@ Don't go away if you don't like pineapple on pizza - the name is here just for i
 * [Preview](#preview)
 
 ## Scope
-This project represents my website portofolio. Here, I tried to put together some of my study projects (you can find all of them on my <a href="https://github.com/patricia-cosma?tab=repositories" target="_blank">profile</a>), some blog posts and finally my resume. The goal is to constantly maintain and grow this project as I learn new technologies, come acorss interesting ideas.
+This project represents my website portofolio. Here, I tried to put together some of my study projects (you can find all of them on my <a href="https://github.com/patricia-cosma?tab=repositories" target="_blank">profile</a>), some blog posts and finally my resume. The goal is to constantly maintain and grow this project as I learn new technologies, come across interesting ideas, in order for it to become my "business card" one day. Once I get real-life projects, the "Study Projects" section will simply become "Projects" where I can showcast my work.
 
 ## General Info
 
-I find it more useful and easier to learn by practice and figure along the way the improvements and everything else. Theory is important, but without putting it into some bigger context, it's harder to remember later.
+I find it more useful and easier to learn by practice and figure along the way the needed improvements and how everything intertwines. Theory is important, but without putting it into some bigger context, it's harder to remember later. That's why, after a couple of study sessions and practice, I also included the "Blog" section in my portofolio. This gives me the chance to "practice" the theory after visualizing it.
 <br><br>
-Creating this project bit by bit helped me understand better how each functionality works with one another (e.g.: `display: flex` with `align-items` and `justify-content`). I got to explore how to create a hamburger menu for smaller devices, but also worked on the responsiveness of my website using `@media` queries.
+Creating this project has alsp helped me understand better, bit by bit, how each functionality works with one another (e.g.: `display: flex` with `align-items` and `justify-content`). I got to explore how to create a hamburger menu for smaller devices, but also worked on the responsiveness of my website using `@media` queries.
 
 ## Technologies and Languages
 This project is created using:
