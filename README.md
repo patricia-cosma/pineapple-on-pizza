@@ -31,7 +31,7 @@ This project is created using:
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/107708977/192814671-5d43ea7f-35d6-4fa1-b325-9f746dc9918d.png)
-![image](https://user-images.githubusercontent.com/107708977/192814978-8debc2d4-8a39-450b-9a1b-fc8067148cfd.png)
+![image](https://user-images.githubusercontent.com/107708977/193074238-61cd5170-577b-4e2b-afb3-409be6e22ab6.png)
 ![image](https://user-images.githubusercontent.com/107708977/192815119-8ddec6bd-9352-4f25-aaad-b324554a6bb0.png)
 
 
