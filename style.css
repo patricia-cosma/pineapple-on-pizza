@@ -614,7 +614,7 @@ p {
         border-radius: 0;
         flex-direction: row;
     }
-    #projects .project-item:nth-child(even) { /*will apply only on even elements - can be changed to odd as well if needed*/
+    #projects .project-item:nth-child(even) { /* this applies only on even elements - can be changed to odd as well if needed*/
         flex-direction: row-reverse;
     }
     #projects .all-projects .project-info {
