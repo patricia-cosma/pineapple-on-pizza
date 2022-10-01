@@ -543,11 +543,11 @@ p {
 }
 #footer .social-item img {
     /*you can use 0 in the brackets to make the icons instantly colorful, without hover - see an example below*/
-    filter: grayscale(1); 
+    filter: brightness(0) invert(1); 
     transition: .3s ease filter;
 }
 #footer .social-item:hover img {
-    filter: grayscale(0);
+    filter: none;
 }
 #footer p {
     color: rgba(239, 226, 226, 0.211);
