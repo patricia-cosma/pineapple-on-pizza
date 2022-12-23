@@ -11,8 +11,8 @@ hamburger.addEventListener('click', ()=>{
 
 document.addEventListener('scroll', ()=> {
     var scroll_position = window.scrollY;
-    if (scroll_position > 250) {
-        header.style.backgroundColor = "#41b3a3";
+    if (scroll_position > 200) {
+        header.style.backgroundColor = "#FFDF2B";
     }
     else {
         header.style.backgroundColor = "transparent"; /*done - initially the background-color is still there, first time loading the page - why? change!*/

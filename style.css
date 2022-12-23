@@ -13,10 +13,11 @@ html {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: #3B3939;
 }
 a:hover {
-    color: #f69865ff;
+    /* replace with yellow?*/
+    color: #FFDF2B;
 }
 
 .container{
@@ -44,24 +45,25 @@ p {
 .section-title {
     font-size: 4rem;
     font-weight: 600;
-    color: #41b3a3;
+    color: #3B3939;
     margin-bottom: 10px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: .1rem;
     text-align: center;
 }
 .section-title span {
-    color:#f69865ff;
+    color: #FFDF2B;
 }
 .cta {
     display: inline-block;
-    padding: 10px 30px;
-    color: #ffffff;
-    background-color: transparent;
-    border: 2px solid #f69865ff;
-    font-size: 2rem;
+    padding: 7px 20px;
+    color: #FFDF2B;
+    background-color: #3B3939;
+    border: 2px solid #3B3939;
+    border-radius: 30px;
+    font-size: 1.5rem;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: .1rem;
     margin-top: 30px;
     transition: .3s ease;
@@ -69,16 +71,18 @@ p {
     transition-property: background-color, color;
 }
 .cta:hover {
-    color:#ffffff;
-    background-color:#f69865ff;
+    /* replace with yellow? */
+    color: #3B3939;
+    background-color: #FFDF2B;
+    border: 2px solid #FFDF2B;
 }
 .brand h1 {
-    font-size: 3rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    color: white;
+    color: #3B3939;
 }
 .brand h1 span {
-    color:#f69865ff;
+    color: #FFDF2B;
 }
 /* Header */
 #header {
@@ -132,7 +136,7 @@ p {
     font-weight: 600;
     letter-spacing: .2rem;
     text-decoration: none;
-    color: white;
+    color: #3B3939;
     text-transform: uppercase;
     padding: 30px;
     display: block;
@@ -215,11 +219,16 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url(./img/dog.png);
+    display: flex;
+    flex-wrap: wrap;
+    /* background-image: url(./img/dog.png); */
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1; /*layout: -1 opacity comes under, 0 is the text and 1 is this*/
+}
+#hero div {
+    flex: 1;
 }
 #hero::after /*the overlay*/ {
     content: '';
@@ -228,7 +237,8 @@ p {
     width: 100%;
     left: 0;
     top: 0;
-    background-color: #41b3a3;
+    /* color to be removed */
+    /* background-color: #41b3a3; */
     opacity: .7;
     z-index: -1;
 }
@@ -249,6 +259,11 @@ p {
     animation: text_reveal .5s ease forwards;
     animation-delay: 1s;
 }
+
+#hero p {
+    font-size: 2.5rem;
+}
+
 #hero h1:nth-child(1) { /*this addresses only a child element from h1 - in this case the first*/
     animation-delay: 1s;
 }
@@ -261,7 +276,7 @@ p {
     left: 0;
     height: 100%;
     width: 0; /*the initial span of the animation should be 0*/
-    background-color:#f69865ff;
+    background-color: #FFDF2B;
     animation: text_reveal_box 1s ease; /*the name of the keyframe defined below*/
     animation-delay: 1s;
 }
@@ -579,7 +594,7 @@ p {
 }
 @keyframes text_reveal {
     100% {
-        color:#ffffff;
+        color: #3B3939;
     }
 }
 /*End of Keyframes*/
@@ -699,11 +714,12 @@ p {
         width: fit-content;
         background-color: transparent;
     }
+    
     #header .nav-list ul li {
         display: inline-block;
     }
     #header .nav-list ul li a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     #header .nav-list ul a::after { 
         display: none;
