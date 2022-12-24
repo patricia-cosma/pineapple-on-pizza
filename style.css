@@ -316,9 +316,9 @@ p {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
-    height: 400px;
+    height: 350px;
     border-radius: 10px;
-    background-image: url(/img/icon-bck.png);
+    /* background-image: url(/img/icon-bck.png); */
     background-size: cover;
     margin: 10px 5%;
     position: relative;
@@ -332,25 +332,61 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #41b3a3;
+    background-color: beige;
     /*currently removed - background-image: linear-gradient(100deg, #07454B 0%, #ebda99ff 100%); */
     opacity: 0.8;
     z-index: -1;
 }
-#blog .blog-bottom .icon {
+/* icon currently removed:
+    #blog .blog-bottom .icon {
     height: 80px;
-    width:  80px;
+    width: 80px;
     margin-bottom: 20px;
-}
+} */
 #blog .blog-item h2 {
     font-size: 2rem;
-    color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #3B3939;
     /* text-transform: uppercase; */
 }
 #blog .blog-item p {
-    color: white;
-    text-align: left;    
+    color: #3B3939;
+    text-align: justify;    
+}
+
+.pushable {
+    background: #FFDF2B;
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin-top: 20px;
+}
+
+.front {
+    display: block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #3B3939;
+    color: #FFDF2B;
+    transform: translateY(-4px);
+    will-change: transform;
+    transition: transform 20ms;
+}
+
+.pushable:hover .front {
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.pushable:focus:not(:focus-visible) {
+    outline: none;
 }
 /*End of Blog Section*/
 
@@ -448,19 +484,19 @@ p {
     /* if needed, you can also add: font-weight: 500; */
     letter-spacing: .2rem;
     margin-bottom: 10px;
-    color: #41b3a3;
+    color: #3B3939;
 }
 #about .col-right p {
     margin-bottom: 20px;
 }
 #about .col-right .cta {
-    color: #41b3a3;
+    color: #FFDF2B;
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
 }
 #about .col-right .cta:hover {
-    color: white;
+    color: #3B3939;
 }
 #about .col-left {
     width: 250px;
@@ -479,7 +515,7 @@ p {
     top: 40px;
     height: 90%;
     width: 80%;
-    border: 7px solid #41b3a3;
+    border: 7px solid #FFDF2B;
     z-index: -1;
 }
 /* End About Section */
