@@ -57,10 +57,11 @@ p {
 .cta {
     display: inline-block;
     padding: 7px 20px;
-    color: #FFDF2B;
-    background-color: #3B3939;
-    border: 2px solid #3B3939;
+    color: #3B3939;
+    background-color: #FFDF2B;
+    border: 2px solid #FFDF2B;
     border-radius: 30px;
+    box-shadow: 0px 5px 5px 2px rgba(59, 57, 57, 0.7);
     font-size: 1.5rem;
     font-weight: bold;
     /* text-transform: uppercase; */
@@ -72,9 +73,10 @@ p {
 }
 .cta:hover {
     /* replace with yellow? */
-    color: #3B3939;
-    background-color: #FFDF2B;
-    border: 2px solid #FFDF2B;
+    color: #FFDF2B;
+    background-color: #3B3939;
+    border: 2px solid #3B3939;
+    box-shadow: 0px 5px 5px 2px rgba(255, 223, 43, 0.7);
 }
 .brand h1 {
     font-size: 1.3rem;
@@ -354,39 +356,17 @@ p {
     text-align: justify;    
 }
 
-.pushable {
-    background: #FFDF2B;
-    border: none;
-    border-radius: 12px;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 4px;
-    margin-top: 20px;
+#blog .cta {
+    padding: 7px 20px;
+    font-size: 2rem;
 }
 
-.front {
-    display: block;
-    padding: 10px 25px;
-    border-radius: 12px;
+.more {
+    padding-top: 15px;
     font-size: 1.2rem;
-    font-weight: 500;
-    background: #3B3939;
-    color: #FFDF2B;
-    transform: translateY(-4px);
-    will-change: transform;
-    transition: transform 20ms;
-}
-
-.pushable:hover .front {
-    transform: translateY(-6px);
-}
-
-.pushable:active .front {
-    transform: translateY(-2px);
-}
-
-.pushable:focus:not(:focus-visible) {
-    outline: none;
+    font-weight: 700;
+    color: #3B3939;
+    text-decoration: underline;
 }
 /*End of Blog Section*/
 
@@ -490,7 +470,6 @@ p {
     margin-bottom: 20px;
 }
 #about .col-right .cta {
-    color: #FFDF2B;
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
