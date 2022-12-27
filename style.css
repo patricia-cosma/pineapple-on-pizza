@@ -477,7 +477,7 @@ p {
     font-size: 2rem;
 }
 #about .col-right .cta:hover {
-    color: #3B3939;
+    color: #FFDF2B;
 }
 #about .col-left {
     width: 250px;
@@ -551,6 +551,7 @@ p {
 #footer {
     background-color: #3B3939;
     opacity: 0.9;
+    margin-top: 100px;
 }
 #footer .footer {
     min-height: 200px;
