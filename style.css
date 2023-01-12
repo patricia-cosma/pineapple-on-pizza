@@ -547,6 +547,11 @@ p {
 }
 /* End Contact Section */
 
+#subscribe {
+    margin: auto;
+    width: 50%;
+}
+
 /* Footer Section */
 #footer {
     background-color: #3B3939;
